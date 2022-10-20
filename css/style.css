@@ -165,6 +165,8 @@ table {
   flex-grow: 2;
 }
 .sobre p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
   font-size: 1.5rem;
   text-align: left;
   line-height: 26px;
@@ -183,13 +185,16 @@ table {
   text-align: center;
 }
 .projeto h1 {
-  font-size: 2rem;
+  font-size: 20pt;
+  font-weight: bold;
   margin-bottom: 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .btn a {
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
-  font-size: 20pt;
+  font-size: 15pt;
   display: block;
   color: black;
   background-color: orange;
@@ -201,6 +206,7 @@ table {
 }
 
 .btn a:hover {
+  font-weight: bold;
   padding: 15px;
   background: orangered;
 }
