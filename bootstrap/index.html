@@ -10,12 +10,68 @@
     />
 
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 class="btn btn-secondary">Teste</h1>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/caravan.svg" alt="Caravan" />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Abrir Navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Locais</a
+            >
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="local.html">California</a>
+              <a class="dropdown-item" href="local.html">Paris</a>
+              <a class="dropdown-item" href="local.html">Duplin</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="planos.html">Planos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="planos.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary ml-md-2" href="inscricao.html"
+              >Inscreva-se</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
