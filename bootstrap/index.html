@@ -13,6 +13,61 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLoginTitulo"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginTitulo">
+              Entre na Sua Conta
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="loginEmail"
+                  aria-describedby="emailHelp"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="loginSenha">Senha</label>
+                <input type="password" class="form-control" id="loginSenha" />
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Entra na Conta
+              </button>
+              <small class="form-text text-muted"
+                >Esqueceu a senha? <a href="#">Clique aqui.</a>.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fecha Modal -->
+
     <nav
       class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow"
     >
@@ -60,7 +115,13 @@
             <a class="nav-link" href="planos.html">Contato</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a
+              class="nav-link"
+              href="#"
+              data-toggle="modal"
+              data-target="#modalLogin"
+              >Login</a
+            >
           </li>
           <li class="nav-item">
             <a class="btn btn-outline-primary ml-md-2" href="inscricao.html"
