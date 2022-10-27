@@ -181,7 +181,7 @@ table {
 .projeto {
   margin: 0 auto;
   width: 960px;
-  display: flex;
+  display: inline;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
