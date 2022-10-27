@@ -228,12 +228,13 @@ body {
 }
 
 [data-tab="content"] section.ativo {
-  animation: show 0.5s forwards;
+  display: block !important;
 }
-[data-tab="content"] section.ativo.show-right {
+
+[data-tab="content"]section.ativo.show-right {
   animation: show-right 0.5s forwards;
 }
-[data-tab="content"] section.ativo.show-down {
+[data-tab="content"]section.ativo.show-down {
   animation: show-down 0.5s forwards;
 }
 
@@ -258,22 +259,21 @@ body {
   }
 }
 
-.js .js-accordion dd {
+.js [data-anime="accordion"] dd {
   display: none;
 }
-.js-accordion dt::after {
+[data-anime="accordion"] dt::after {
   content: "⮧";
   margin-left: 10px;
 }
 
-.js-accordion dt.ativo::after {
+[data-anime="accordion"] dt.ativo::after {
   content: "⮥";
-  margin-left: 10px;
 }
 
-.js-accordion dd.ativo {
+[data-anime="accordion"] dd.ativo {
   display: block;
-  animation: slideDown 0.5s forwards;
+  animation: slideDown 1s forwards;
 }
 
 @keyframes slideDown {
@@ -285,4 +285,14 @@ body {
     height: auto;
     opacity: 1;
   }
+}
+
+.js [data-anime="scroll"] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+.js [data-anime="scroll"].ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
